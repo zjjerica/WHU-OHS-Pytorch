@@ -18,7 +18,7 @@ The dataset was organized in the format shown in Fig. 2.
 
 ![](Dataset_format.png)
 
-<p align='center'>Fig. 2.Data organization of the WHU-OHS dataset.
+<p align='center'>Fig. 2. Data organization of the WHU-OHS dataset.
 
 ## Code
 Coming soon ...
