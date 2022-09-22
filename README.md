@@ -1,10 +1,10 @@
 # WHU-OHS-Pytorch
 Pytorch toolbox for large-scale hyperspectral image classification using WHU-OHS dataset
 
-Paper: 
+**Paper:** 
 J. Li, X. Huang, and L. Tu, “WHU-OHS : A benchmark dataset for large-scale Hersepctral Image classification,” Int. J. Appl. Earth Obs. Geoinf., vol. 113, no. September, p. 103022, 2022, doi: 10.1016/j.jag.2022.103022. [[Link]](https://www.sciencedirect.com/science/article/pii/S1569843222002102)
 
-Dataset download: http://irsip.whu.edu.cn/resources/WHU_OHS_show.php
+**Dataset download:** http://irsip.whu.edu.cn/resources/WHU_OHS_show.php
 
 ## Dateset Introduction
 The WHU-OHS dataset is made up of 42 OHS satellite images acquired from more than 40 different locations in China (Fig. 1). The imagery has a spatial resolution of 10 m (nadir) and a swath width of 60 km (nadir). There are 32 spectral channels ranging from the visible to near-infrared range, with an average spectral resolution of 15 nm. We cropped each image into 512 × 512 pixels with a stride of 32. There are 4822, 513, and 2460 sub-images in the training, validation, and test sets, respectively.
