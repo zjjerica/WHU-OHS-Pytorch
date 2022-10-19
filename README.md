@@ -1,5 +1,4 @@
 # WHU-OHS-Pytorch
-Pytorch toolbox for large-scale hyperspectral image classification using WHU-OHS dataset
 
 **Paper:** 
 J. Li, X. Huang, and L. Tu, “WHU-OHS : A benchmark dataset for large-scale Hersepctral Image classification,” Int. J. Appl. Earth Obs. Geoinf., vol. 113, no. September, p. 103022, 2022, doi: 10.1016/j.jag.2022.103022. [[Link]](https://www.sciencedirect.com/science/article/pii/S1569843222002102)
@@ -21,4 +20,7 @@ The dataset was organized in the format shown in Fig. 2.
 <p align='center'>Fig. 2. Data organization of the WHU-OHS dataset.
 
 ## Code
-Coming soon ...
+Pytorch toolbox for large-scale hyperspectral image classification using WHU-OHS dataset. The deep network models will be updated continuously.
+Deep network models:
+1D-CNN: W. Hu, Y. Huang, L. Wei, F. Zhang, and H. Li, “Deep Convolutional Neural Networks for Hyperspectral Image Classification,” J. Sensors, vol. 2015, p. 12, 2015.
+3D-CNN: Y. Chen, H. Jiang, C. Li, X. Jia, and P. Ghamisi, “Deep Feature Extraction and Classification of Hyperspectral Images Based on Convolutional Neural Networks,” IEEE Trans. Geosci. Remote Sens., vol. 54, pp. 6232–6251, 2016.
