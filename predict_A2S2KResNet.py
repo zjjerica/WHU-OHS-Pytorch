@@ -53,7 +53,7 @@ def main():
     summary(model, (1, 512, 512, 32))
 
     # Load model (model of final epoch or best model evaluated on the validation set)
-    model_path = './model/S1_A2S2KResNet/A2S2KResNet_update_48.pth'
+    model_path = './model/S1_A2S2KResNet/A2S2KResNet_final.pth'
     model.load_state_dict(torch.load(model_path))
     print('Loaded trained model.')
 
