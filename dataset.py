@@ -5,19 +5,12 @@ from torch.utils import data
 import numpy as np
 from osgeo import gdal
 
-IMG_EXTENSIONS = [
-    '.jpg', '.JPG', '.jpeg', '.JPEG',
-    '.png', '.PNG', '.ppm', '.PPM', '.bmp', '.BMP','.tif'
-]
-
-def is_image_file(filename):
-    return any(filename.endswith(extension) for extension in IMG_EXTENSIONS)
-
 class WHU_OHS_Dataset(data.Dataset):
-    def __init__(self, image_file_list, label_file_list, use_3D_input=False):
+    def __init__(self, image_file_list, label_file_list, use_3D_input=False, channel_last=False):
         self.image_file_list = image_file_list
         self.label_file_list = label_file_list
         self.use_3D_input = use_3D_input
+        self.channel_last = channel_last
 
     # Statistics of samples of each class in the dataset
     def sample_stat(self):
@@ -45,6 +38,9 @@ class WHU_OHS_Dataset(data.Dataset):
         image = image_dataset.ReadAsArray()
         label = label_dataset.ReadAsArray()
 
+        if(self.channel_last):
+            image = image.transpose(1, 2, 0)
+
         # The image patches were normalized and scaled by 10000 to reduce storage cost
         image = torch.tensor(image, dtype=torch.float) / 10000.0
 
@@ -54,14 +50,5 @@ class WHU_OHS_Dataset(data.Dataset):
         label = torch.tensor(label, dtype=torch.long) - 1
 
         return image, label, name
-
-
-
-
-
-
-
-
-
 
 
