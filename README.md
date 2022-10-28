@@ -32,7 +32,7 @@ Deep network models:
 
 **FreeNet**: Z. Zheng, Y. Zhong, A. Ma, and L. Zhang, “FPGA: Fast Patch-Free Global Learning Framework for Fully End-to-End Hyperspectral Image Classification,” IEEE Trans. Geosci. Remote Sens., vol. 58, no. 8, pp. 5612–5626, 2020.
 
-Accuracy on test set for reference (taking S1 image: Changchun as an example):
+Accuracy on test set for reference (taking S1: Changchun as an example):
 
 <div align="center">
 
