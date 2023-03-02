@@ -19,6 +19,87 @@ The dataset was organized in the format shown in Fig. 2.
 
 <p align='center'>Fig. 2. Data organization of the WHU-OHS dataset.
 
+The correspondence of label IDs and categories:
+
+<div align="center">
+
+<table>
+    <tr>
+        <th align="center">ID
+        <th align="center">Category
+        <th align="center">ID
+        <th align="center">Category
+        <th align="center">ID
+        <th align="center">Category
+        <th align="center">ID
+        <th align="center">Category
+    </tr>
+    <tr>
+        <td align="left">1
+        <td align="left">Paddy field
+        <td align="left">7
+        <td align="left">High-covered grassland
+        <td align="left">13
+        <td align="left">Beach land
+        <td align="left">19
+        <td align="left">Gobi
+    </tr>
+    <tr>
+        <td align="left">2
+        <td align="left">Dry farm
+        <td align="left">8
+        <td align="left">Medium-covered grassland
+        <td align="left">14
+        <td align="left">Shoal
+        <td align="left">20
+        <td align="left">Saline-alkali soil
+    </tr>
+    <tr>
+        <td align="left">3
+        <td align="left">Woodland
+        <td align="left">9
+        <td align="left">Low-covered grassland
+        <td align="left">15
+        <td align="left">Urban built-up
+        <td align="left">21
+        <td align="left">Marshland
+    </tr>
+    <tr>
+        <td align="left">4
+        <td align="left">Shrubbery
+        <td align="left">10
+        <td align="left">River canal
+        <td align="left">16
+        <td align="left">Rural settlement
+        <td align="left">22
+        <td align="left">Bare land
+    </tr>
+    <tr>
+        <td align="left">5
+        <td align="left">Sparse woodland
+        <td align="left">11
+        <td align="left">Lake
+        <td align="left">17
+        <td align="left">Other construction land
+        <td align="left">23
+        <td align="left">Bare rock
+    </tr>
+    <tr>
+        <td align="left">6
+        <td align="left">Other forest land
+        <td align="left">12
+        <td align="left">Reservoir pond
+        <td align="left">18
+        <td align="left">Sand
+        <td align="left">24
+        <td align="left">Ocean
+    </tr>
+
+</table>
+
+</div>
+
+
 ## Code
 Pytorch toolbox for large-scale hyperspectral image classification using WHU-OHS dataset. The deep network models will be updated continuously.
 
@@ -36,127 +117,35 @@ Accuracy on test set for reference (taking S1: Changchun as an example):
 
 <div align="center">
 
-<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
- mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
- <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
-  <td width="111" valign="top" style="width:83.0pt;border:solid windowtext 1.0pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><span lang="EN-US">Network<o:p></o:p></span></b></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
-  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">1D-CNN</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
-  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">3D-CNN</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
-  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">A2S2K-ResNet</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border:solid windowtext 1.0pt;
-  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
-  solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">FreeNet</span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:1">
-  <td width="111" valign="top" style="width:83.0pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><span lang="EN-US">OA<o:p></o:p></span></b></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.636</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.766</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.809</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.847</span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:2">
-  <td width="111" valign="top" style="width:83.0pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><span lang="EN-US">Kappa<o:p></o:p></span></b></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.526</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.700</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.757</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.806</span></p>
-  </td>
- </tr>
- <tr style="mso-yfti-irow:3;mso-yfti-lastrow:yes">
-  <td width="111" valign="top" style="width:83.0pt;border:solid windowtext 1.0pt;
-  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
-  padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><span lang="EN-US">mIoU<o:p></o:p></span></b></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.227</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.305</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.419</span></p>
-  </td>
-  <td width="111" valign="top" style="width:82.95pt;border-top:none;border-left:
-  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
-  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
-  mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt">
-  <p class="MsoNormal" align="center" style="text-align:center"><span lang="EN-US">0.480</span></p>
-  </td>
- </tr>
-</tbody></table>
+<table>
+    <tr>
+        <th align="center">Network
+        <td align="center">1D-CNN
+        <td align="center">3D-CNN
+        <td align="center">A2S2K-ResNet
+        <td align="center">FreeNet
+    </tr>
+    <tr>
+        <th align="center">OA
+        <td align="center">0.636
+        <td align="center">0.766
+        <td align="center">0.809
+        <td align="center">0.847
+    </tr>
+    <tr>
+        <th align="center">Kappa
+        <td align="center">0.526
+        <td align="center">0.700
+        <td align="center">0.757
+        <td align="center">0.806
+    </tr>
+    <tr>
+        <th align="center">mIoU
+        <td align="center">0.227
+        <td align="center">0.305
+        <td align="center">0.419
+        <td align="center">0.480
+    </tr>
+</table>
 
 </div>
