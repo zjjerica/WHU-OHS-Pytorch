@@ -103,9 +103,9 @@ The correspondence of label IDs and categories:
 ## Code
 Pytorch toolbox for large-scale hyperspectral image classification using WHU-OHS dataset. The deep network models will be updated continuously.
 
-Update:
+**Update:**
 
-2024.3.11 Example code for transfer learning from WHU-OHS dataset to public hyperspectral datasets is updated. See the "transfer" folder.
+**2024.3.11 Example code for transfer learning from WHU-OHS dataset to public hyperspectral datasets is updated. See the "transfer" folder.**
 
 Deep network models:
 
