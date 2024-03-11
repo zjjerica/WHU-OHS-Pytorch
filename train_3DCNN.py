@@ -80,7 +80,7 @@ def main():
     val_dataset = WHU_OHS_Dataset(image_file_list=val_image_list, label_file_list=val_label_list, use_3D_input=True)
     val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=1, shuffle=False, num_workers=2, pin_memory=True)
 
-    optimizer = optim.SGD(model.parameters(), lr=1e-2)
+    optimizer = optim.SGD(model.parameters(), lr=1e-3)
     criterion = torch.nn.CrossEntropyLoss(ignore_index=-1)
 
     model_path = './model/' + image_prefix + '_' + model_name + '/'
