@@ -6,7 +6,7 @@ J. Li, X. Huang, and L. Tu, “WHU-OHS : A benchmark dataset for large-scale H
 **Dataset download:** http://irsip.whu.edu.cn/resources/WHU_OHS_show.php
 
 ## Dateset Introduction
-The WHU-OHS dataset is made up of 42 OHS satellite images acquired from more than 40 different locations in China (Fig. 1). The imagery has a spatial resolution of 10 m (nadir) and a swath width of 60 km (nadir). There are 32 spectral channels ranging from the visible to near-infrared range, with an average spectral resolution of 15 nm. We cropped each image into 512 × 512 pixels with a stride of 32. There are 4822, 513, and 2460 sub-images in the training, validation, and test sets, respectively.
+The WHU-OHS dataset is made up of 42 OHS satellite images acquired from more than 40 different locations in China (Fig. 1). The imagery has a spatial resolution of 10 m (nadir) and a swath width of 60 km (nadir). There are 32 spectral channels ranging from the visible to near-infrared range, with an average spectral resolution of 15 nm. We cropped each image into 512 × 512 pixels with an overlap of 32. There are 4822, 513, and 2460 sub-images in the training, validation, and test sets, respectively.
 
 ![](Dataset_introduction.png)
 
